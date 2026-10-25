@@ -12,8 +12,6 @@
     <string name="register">Sign up</string>
     <string name="no_account">New here? Create an account</string>
     <string name="have_account">Already have an account? Log in</string>
-    <string name="demo_hint">Demo: shubham@skillmatch.dev / password123</string>
-
     <!-- Jobs list -->
     <string name="opportunities">Opportunities</string>
     <string name="tab_recommended">Recommended</string>

@@ -11,8 +11,6 @@
     <string name="register">साइन अप करें</string>
     <string name="no_account">नए हैं? खाता बनाएँ</string>
     <string name="have_account">पहले से खाता है? लॉग इन करें</string>
-    <string name="demo_hint">डेमो: shubham@skillmatch.dev / password123</string>
-
     <!-- Jobs list -->
     <string name="opportunities">अवसर</string>
     <string name="tab_recommended">आपके लिए</string>

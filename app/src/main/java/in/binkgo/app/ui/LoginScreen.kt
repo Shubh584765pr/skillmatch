@@ -138,14 +138,5 @@ fun LoginScreen(vm: AppViewModel) {
         }) {
             Text(stringResource(if (isRegister) R.string.have_account else R.string.no_account))
         }
-
-        if (!isRegister) {
-            Spacer(Modifier.height(8.dp))
-            Text(
-                stringResource(R.string.demo_hint),
-                style = MaterialTheme.typography.bodySmall,
-                color = MaterialTheme.colorScheme.onSurfaceVariant,
-            )
-        }
     }
 }
