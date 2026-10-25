@@ -18,15 +18,18 @@ curl http://localhost:3000/api/health   # → {"ok":true}
 The database is created and filled with sample data on first start (`backend/db/*.sql`).
 To reset to fresh sample data: `docker compose down -v && docker compose up -d`.
 
-**2. Run the app** from Android Studio (green ▶) on a phone or emulator.
+**2. Run the app** from Android Studio (green ▶).
 
-The app calls `http://localhost:3000/`, so forward that port from the device to your PC once per connection:
+**For the demo meeting, the app will be shown on the Android emulator** (Device Manager → start a virtual device → ▶ Run), with the API running as described in step 1. Easy to screen-share from one machine.
+
+- **Emulator:** set `skillmatch.apiBaseUrl=http://10.0.2.2:3000/` in `gradle.properties` (or keep `localhost` and run `adb reverse tcp:3000 tcp:3000`).
+- **Physical phone:** USB debugging + `adb reverse tcp:3000 tcp:3000`, with `skillmatch.apiBaseUrl=http://localhost:3000/`.
 
 ```bash
 adb reverse tcp:3000 tcp:3000
 ```
 
-(The address lives in `gradle.properties` → `skillmatch.apiBaseUrl`. On an emulator you can use `http://10.0.2.2:3000/` instead and skip `adb reverse`.)
+How to run is documented above (source + Android Studio). An APK is not part of the submission; the live walkthrough uses the emulator.
 
 **3. Log in** with the demo account: `shubham@skillmatch.dev` / `password123`, or create a new account.
 
@@ -94,7 +97,8 @@ backend/
 - Job alerts send a local device notification (not cloud/FCM push).
 - Job content (titles, descriptions) and server error messages are English only; only the app UI is translated.
 - No Learning/courses section; map view is a stylized location cluster (not Google Maps).
-- No automated tests (skipped by choice for the 2-day scope); the API was checked with curl and the app on a real phone.
+- No automated tests (skipped by choice for the 2-day scope); the API was checked with curl and the app on a real phone / emulator.
 - No pagination (24 sample jobs); `JWT_SECRET` in `docker-compose.yml` is a dev value.
+- **Demo plan:** walk through the app on the Android emulator during the call (see Run it above).
 
 All companies, jobs and people in the sample data are made up.
