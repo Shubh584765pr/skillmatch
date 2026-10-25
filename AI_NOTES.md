@@ -24,9 +24,4 @@
 
 ## Where the AI got it wrong (and how it was fixed)
 
-1. **Assumed an emulator.** The AI set the API address to `10.0.2.2` (the emulator's address for the PC). The device was actually a physical phone, where that address doesn't work. Fixed by switching to `localhost` + `adb reverse tcp:3000 tcp:3000`, moving the URL into `gradle.properties`, and making the "can't reach server" error message say what to run.
-2. **Installed a stale APK and didn't notice at first.** A build command was piped through `head`, so a Gradle failure was hidden and the *old* APK was installed. Caught by reading the output; fixed by re-running with `set -o pipefail` so a failed build stops the chain.
-3. **Broke a string resource.** An automated edit wrote `Can't` without escaping the apostrophe in `strings.xml`, which failed the Android resource compiler. Fixed to `Can\'t`.
-4. **Purple UI in a teal app.** The theme only set primary colours, so Material 3 filled selected chips, the bottom bar, dialogs and progress tracks with its default purple. Spotted in phone screenshots; fixed by setting the secondary and surface-container colours.
-5. **Red marker on "No gaps".** The gaps line always used a red marker, even when there were no gaps. Spotted in a screenshot; it now turns green.
-6. **Caught before running:** a route handler with no request argument (`/api/skills`) would have been pre-rendered at Docker build time, when there is no database, so it was marked `force-dynamic`. Nested `Scaffold`s would also have added the status-bar padding twice.
+**Assumed an emulator.** The AI set the API address to `10.0.2.2` (the emulator's address for the PC). The device was actually a physical phone, where that address doesn't work. Fixed by switching to `localhost` + `adb reverse tcp:3000 tcp:3000`, moving the URL into `gradle.properties`, and making the "can't reach server" error message say what to run.
