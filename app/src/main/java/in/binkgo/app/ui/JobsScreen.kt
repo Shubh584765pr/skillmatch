@@ -186,7 +186,7 @@ fun JobsScreen(vm: JobsViewModel, skillsVersion: Int, onOpenJob: (Int) -> Unit) 
                     jobs = visible,
                     onSelectLocation = vm::openLocationInList,
                     onViewJobs = vm::openJobsList,
-                    onViewCompanies = vm::openJobsList,
+                    onViewCompanies = vm::openCompaniesList,
                     modifier = Modifier.weight(1f).fillMaxWidth(),
                 )
             }
@@ -203,11 +203,35 @@ fun JobsScreen(vm: JobsViewModel, skillsVersion: Int, onOpenJob: (Int) -> Unit) 
                         if (vm.tab == JobTab.RECOMMENDED) {
                             RecommendedBanner()
                         }
-                        visible.forEach { job ->
-                            if (vm.tab == JobTab.RECOMMENDED) {
-                                RecommendedJobCard(job, onClick = { onOpenJob(job.id) }, onToggleSave = { vm.toggleSave(job) })
-                            } else {
-                                JobCard(job, onClick = { onOpenJob(job.id) }, onToggleSave = { vm.toggleSave(job) })
+                        if (vm.listGrouping == JobsListGrouping.BY_COMPANY) {
+                            Text(
+                                stringResource(R.string.companies_section_title),
+                                style = MaterialTheme.typography.titleMedium,
+                                fontWeight = FontWeight.SemiBold,
+                            )
+                            visible
+                                .groupBy { it.company }
+                                .toList()
+                                .sortedBy { it.first.lowercase() }
+                                .forEach { (company, companyJobs) ->
+                                    Text(
+                                        stringResource(R.string.company_jobs_count, company, companyJobs.size),
+                                        style = MaterialTheme.typography.labelLarge,
+                                        fontWeight = FontWeight.SemiBold,
+                                        color = MaterialTheme.colorScheme.primary,
+                                        modifier = Modifier.padding(top = 4.dp),
+                                    )
+                                    companyJobs.forEach { job ->
+                                        JobCard(job, onClick = { onOpenJob(job.id) }, onToggleSave = { vm.toggleSave(job) })
+                                    }
+                                }
+                        } else {
+                            visible.forEach { job ->
+                                if (vm.tab == JobTab.RECOMMENDED) {
+                                    RecommendedJobCard(job, onClick = { onOpenJob(job.id) }, onToggleSave = { vm.toggleSave(job) })
+                                } else {
+                                    JobCard(job, onClick = { onOpenJob(job.id) }, onToggleSave = { vm.toggleSave(job) })
+                                }
                             }
                         }
                         Text(

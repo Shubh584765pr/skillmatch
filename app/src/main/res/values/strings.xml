@@ -31,6 +31,8 @@
     <string name="view_map">Map view</string>
     <string name="view_jobs_count">View jobs (%d)</string>
     <string name="view_companies_count">View companies (%d)</string>
+    <string name="companies_section_title">Companies</string>
+    <string name="company_jobs_count">%1$s · %2$d jobs</string>
     <string name="filter_last_24h">Last 24 hours</string>
     <string name="empty_last_24h">No jobs posted in the last 24 hours.</string>
     <string name="clear_search">Clear search</string>

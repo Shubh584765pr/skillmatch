@@ -20,6 +20,9 @@ enum class JobTab(val apiValue: String) {
 
 enum class JobsViewMode { LIST, MAP }
 
+/** How the All Jobs list is arranged after map chips. */
+enum class JobsListGrouping { NONE, BY_COMPANY }
+
 private const val SEARCH_DEBOUNCE_MS = 300L
 
 class JobsViewModel : ViewModel() {
@@ -34,6 +37,8 @@ class JobsViewModel : ViewModel() {
     var error by mutableStateOf<String?>(null)
         private set
     var viewMode by mutableStateOf(JobsViewMode.LIST)
+    var listGrouping by mutableStateOf(JobsListGrouping.NONE)
+        private set
     var last24HoursOnly by mutableStateOf(false)
 
     var detail by mutableStateOf<Job?>(null)
@@ -55,6 +60,7 @@ class JobsViewModel : ViewModel() {
         tab = newTab
         // Map is only for All Jobs; other tabs stay as lists (like iExchange).
         viewMode = if (newTab == JobTab.ALL) JobsViewMode.MAP else JobsViewMode.LIST
+        listGrouping = JobsListGrouping.NONE
         // Saved / Applied have no search bar — don't carry over a leftover query.
         if (newTab == JobTab.SAVED || newTab == JobTab.APPLIED) {
             query = ""
@@ -64,6 +70,7 @@ class JobsViewModel : ViewModel() {
 
     fun onQueryChange(newQuery: String) {
         query = newQuery
+        listGrouping = JobsListGrouping.NONE
         load(delayMs = SEARCH_DEBOUNCE_MS) // wait for the user to stop typing
     }
 
@@ -73,13 +80,23 @@ class JobsViewModel : ViewModel() {
 
     /** Map pin tap → list filtered to that city. */
     fun openLocationInList(location: String) {
+        listGrouping = JobsListGrouping.NONE
         viewMode = JobsViewMode.LIST
         onQueryChange(location.substringBefore(",").trim())
     }
 
-    /** Bottom map chips → full job list. */
+    /** Map “View jobs” → full job list (keeps current jobs; reloads clean). */
     fun openJobsList() {
         query = ""
+        listGrouping = JobsListGrouping.NONE
+        viewMode = JobsViewMode.LIST
+        load()
+    }
+
+    /** Map “View companies” → same jobs, grouped by company name. */
+    fun openCompaniesList() {
+        query = ""
+        listGrouping = JobsListGrouping.BY_COMPANY
         viewMode = JobsViewMode.LIST
         load()
     }

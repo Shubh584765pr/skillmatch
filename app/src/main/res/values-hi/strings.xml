@@ -30,6 +30,8 @@
     <string name="view_map">मानचित्र दृश्य</string>
     <string name="view_jobs_count">नौकरियाँ देखें (%d)</string>
     <string name="view_companies_count">कंपनियाँ देखें (%d)</string>
+    <string name="companies_section_title">कंपनियाँ</string>
+    <string name="company_jobs_count">%1$s · %2$d नौकरियाँ</string>
     <string name="filter_last_24h">पिछले 24 घंटे</string>
     <string name="empty_last_24h">पिछले 24 घंटों में कोई नौकरी पोस्ट नहीं हुई।</string>
     <string name="clear_search">खोज साफ़ करें</string>

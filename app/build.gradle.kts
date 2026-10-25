@@ -23,8 +23,14 @@ android {
         buildConfigField("String", "API_BASE_URL", "\"$apiBaseUrl\"")
     }
 
+    // Demo/release APK signed with the debug key so anyone can sideload it
+    // without a Play Store keystore. Fine for assessment sharing.
+    signingConfigs {
+        getByName("debug")
+    }
     buildTypes {
         release {
+            signingConfig = signingConfigs.getByName("debug")
             optimization {
                 enable = false
             }
