@@ -1,0 +1,110 @@
+<resources>
+    <string name="tagline">आपके असली कौशल से मेल खाती नौकरियाँ</string>
+
+    <!-- Login -->
+    <string name="login_title">फिर से स्वागत है</string>
+    <string name="register_title">अपना खाता बनाएँ</string>
+    <string name="name">नाम</string>
+    <string name="email">ईमेल</string>
+    <string name="password">पासवर्ड</string>
+    <string name="login">लॉग इन करें</string>
+    <string name="register">साइन अप करें</string>
+    <string name="no_account">नए हैं? खाता बनाएँ</string>
+    <string name="have_account">पहले से खाता है? लॉग इन करें</string>
+    <string name="demo_hint">डेमो: shubham@skillmatch.dev / password123</string>
+
+    <!-- Jobs list -->
+    <string name="opportunities">अवसर</string>
+    <string name="tab_recommended">आपके लिए</string>
+    <string name="tab_all">सभी नौकरियाँ</string>
+    <string name="tab_saved">सहेजी गईं</string>
+    <string name="tab_applied">आवेदन किए</string>
+    <string name="tab_with_count">%1$s (%2$d)</string>
+    <string name="recommended_banner_title">आपके कौशल से मेल</string>
+    <string name="recommended_banner_body">केवल वे नौकरियाँ जहाँ आपके पास कम से कम आधे आवश्यक कौशल हैं, सबसे अच्छा मेल पहले।</string>
+    <string name="match_percent">%d%% मेल</string>
+    <string name="why_recommended">आप क्यों मैच करते हैं</string>
+    <string name="search_hint">नौकरी, कौशल, स्थान खोजें…</string>
+    <string name="search_location_hint">स्थान खोजें…</string>
+    <string name="view_list">सूची दृश्य</string>
+    <string name="view_map">मानचित्र दृश्य</string>
+    <string name="view_jobs_count">नौकरियाँ देखें (%d)</string>
+    <string name="view_companies_count">कंपनियाँ देखें (%d)</string>
+    <string name="filter_last_24h">पिछले 24 घंटे</string>
+    <string name="empty_last_24h">पिछले 24 घंटों में कोई नौकरी पोस्ट नहीं हुई।</string>
+    <string name="clear_search">खोज साफ़ करें</string>
+    <string name="open_job">नौकरी खोलें</string>
+    <string name="scroll_end_hint">सूची का अंत · %d नौकरियाँ</string>
+    <string name="match">मेल</string>
+    <string name="gaps">कमी</string>
+    <string name="no_gaps">कोई कमी नहीं</string>
+    <string name="more_count">+%d</string>
+    <string name="fit_excellent">बेहतरीन मेल</string>
+    <string name="fit_good">अच्छा मेल</string>
+    <string name="fit_stretch">चुनौतीपूर्ण</string>
+    <string name="posted_just_now">अभी-अभी</string>
+    <string name="posted_hours">%d घंटे पहले</string>
+    <string name="posted_days">%d दिन पहले</string>
+    <string name="empty_recommended">अभी कोई सुझाई गई नौकरी नहीं है। बेहतर मेल के लिए और कौशल जोड़ें।</string>
+    <string name="empty_saved">आपने अभी तक कोई नौकरी नहीं सहेजी है। सहेजने के लिए दिल पर टैप करें।</string>
+    <string name="empty_applied">आपने अभी तक किसी नौकरी के लिए आवेदन नहीं किया है। नौकरी खोलकर Apply दबाएँ।</string>
+    <string name="empty_all">दिखाने के लिए कोई नौकरी नहीं है।</string>
+    <string name="empty_search">\"%s\" से कोई नौकरी मेल नहीं खाती।</string>
+    <string name="retry">फिर से कोशिश करें</string>
+    <string name="save_job">नौकरी सहेजें</string>
+    <string name="unsave_job">सहेजे से हटाएँ</string>
+    <string name="apply_job">आवेदन करें</string>
+    <string name="withdraw_application">आवेदन वापस लें</string>
+
+    <!-- Job detail -->
+    <string name="back">वापस</string>
+    <string name="job_details">नौकरी का विवरण</string>
+    <string name="experience_years">%1$d–%2$d वर्ष</string>
+    <string name="salary_lpa">₹%1$s–%2$s लाख/वर्ष</string>
+    <string name="match_score">इस नौकरी के %d%% कौशल आपके पास हैं</string>
+    <string name="skills_you_have">आपके पास ये कौशल हैं</string>
+    <string name="skills_to_learn">सीखने लायक कौशल</string>
+    <string name="about_role">भूमिका के बारे में</string>
+    <string name="saved">सहेजा गया</string>
+
+    <!-- Bottom navigation -->
+    <string name="nav_jobs">नौकरियाँ</string>
+    <string name="nav_skills">कौशल</string>
+    <string name="nav_profile">प्रोफ़ाइल</string>
+
+    <!-- Skills -->
+    <string name="my_skills">मेरे कौशल (%d)</string>
+    <string name="skills_intro">आपके कौशल तय करते हैं कि कौन-सी नौकरियाँ आपसे मेल खाती हैं। स्तर बदलने के लिए कौशल पर टैप करें।</string>
+    <string name="level_expert">विशेषज्ञ</string>
+    <string name="level_advanced">उन्नत</string>
+    <string name="level_proficient">दक्ष</string>
+    <string name="level_beginner">शुरुआती</string>
+    <string name="add_skill">कौशल जोड़ें</string>
+    <string name="remove">हटाएँ</string>
+    <string name="search_skills">कौशल खोजें</string>
+    <string name="no_skills_in_level">अभी कोई नहीं</string>
+    <string name="cancel">रद्द करें</string>
+
+    <!-- Profile -->
+    <string name="location">पसंदीदा स्थान</string>
+    <string name="experience_level">अनुभव स्तर</string>
+    <string name="exp_fresher">फ्रेशर</string>
+    <string name="exp_junior">जूनियर</string>
+    <string name="exp_mid">मध्य स्तर</string>
+    <string name="exp_senior">सीनियर</string>
+    <string name="language">ऐप की भाषा</string>
+    <string name="job_alerts">नौकरी अलर्ट</string>
+    <string name="job_alerts_desc">आपके कौशल से मेल खाती नई नौकरियों की सूचना पाएँ</string>
+    <string name="job_alerts_channel_name">नौकरी अलर्ट</string>
+    <string name="job_alerts_channel_desc">जब जॉब मैचिंग चालू हो तो स्थानीय सूचनाएँ</string>
+    <string name="job_alerts_enabled_title">नौकरी अलर्ट चालू</string>
+    <string name="job_alerts_enabled_body">आपके कौशल से मेल खाती नौकरियों की सूचना मिलेगी।</string>
+    <string name="job_alerts_test_title">SkillMatch अलर्ट</string>
+    <string name="job_alerts_test_body">टेस्ट सूचना — इस डिवाइस पर जॉब अलर्ट काम कर रहे हैं।</string>
+    <string name="send_test_notification">टेस्ट सूचना भेजें</string>
+    <string name="save_changes">बदलाव सहेजें</string>
+    <string name="profile_saved">प्रोफ़ाइल सहेजी गई</string>
+    <string name="logout">लॉग आउट</string>
+
+    <string name="error_network">सर्वर से कनेक्ट नहीं हो पा रहा। इंटरनेट जाँचें, या थोड़ी देर बाद फिर कोशिश करें।</string>
+</resources>
