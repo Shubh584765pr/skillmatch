@@ -2,8 +2,10 @@
 
 ## Tools used
 
-- **Claude Code** (Claude Opus, in the terminal) – planning, backend, Android app, running and checking the app on a real phone over `adb`.
-- **Android Studio** – project setup, running the app.
+- **Cursor** (AI coding agent in the editor) – main coding help: planning, backend, Android app, and fixes while building SkillMatch.
+- **Claude** – early help with scope, stack choices, and explaining parts of the backend/Android code.
+- **ChatGPT** – quick questions, error explanations, and wording for README / AI notes.
+- **Android Studio** – project setup, running the app on emulator / phone.
 
 ## How AI was used
 
