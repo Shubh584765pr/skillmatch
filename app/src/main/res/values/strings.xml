@@ -1,0 +1,113 @@
+<resources>
+    <string name="app_name" translatable="false">SkillMatch</string>
+    <string name="tagline">Jobs matched to the skills you actually have</string>
+
+    <!-- Login -->
+    <string name="login_title">Welcome back</string>
+    <string name="register_title">Create your account</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Log in</string>
+    <string name="register">Sign up</string>
+    <string name="no_account">New here? Create an account</string>
+    <string name="have_account">Already have an account? Log in</string>
+    <string name="demo_hint">Demo: shubham@skillmatch.dev / password123</string>
+
+    <!-- Jobs list -->
+    <string name="opportunities">Opportunities</string>
+    <string name="tab_recommended">Recommended</string>
+    <string name="tab_all">All Jobs</string>
+    <string name="tab_saved">Saved</string>
+    <string name="tab_applied">Applied</string>
+    <string name="tab_with_count">%1$s (%2$d)</string>
+    <string name="recommended_banner_title">Matched to your skills</string>
+    <string name="recommended_banner_body">Only jobs where you already have at least half the required skills, best match first.</string>
+    <string name="match_percent">%d%% match</string>
+    <string name="why_recommended">Why you match</string>
+    <string name="search_hint">Search jobs, skills, location…</string>
+    <string name="search_location_hint">Search location…</string>
+    <string name="view_list">List view</string>
+    <string name="view_map">Map view</string>
+    <string name="view_jobs_count">View jobs (%d)</string>
+    <string name="view_companies_count">View companies (%d)</string>
+    <string name="filter_last_24h">Last 24 hours</string>
+    <string name="empty_last_24h">No jobs posted in the last 24 hours.</string>
+    <string name="clear_search">Clear search</string>
+    <string name="open_job">Open job</string>
+    <string name="scroll_end_hint">End of list · %d jobs</string>
+    <string name="match">Match</string>
+    <string name="gaps">Gaps</string>
+    <string name="no_gaps">No gaps</string>
+    <string name="more_count">+%d</string>
+    <string name="fit_excellent">Excellent Fit</string>
+    <string name="fit_good">Good Fit</string>
+    <string name="fit_stretch">Stretch</string>
+    <string name="posted_just_now">Just now</string>
+    <string name="posted_hours">%dh ago</string>
+    <string name="posted_days">%dd ago</string>
+    <string name="empty_recommended">No recommended jobs yet. Add more skills to get better matches.</string>
+    <string name="empty_saved">You haven\'t saved any jobs yet. Tap the heart on a job to save it.</string>
+    <string name="empty_applied">You haven\'t applied to any jobs yet. Open a job and tap Apply.</string>
+    <string name="empty_all">No jobs to show.</string>
+    <string name="empty_search">No jobs match \"%s\".</string>
+    <string name="retry">Retry</string>
+    <string name="save_job">Save job</string>
+    <string name="unsave_job">Remove from saved</string>
+    <string name="apply_job">Apply</string>
+    <string name="withdraw_application">Withdraw application</string>
+
+    <!-- Job detail -->
+    <string name="back">Back</string>
+    <string name="job_details">Job details</string>
+    <string name="experience_years">%1$d–%2$d yrs</string>
+    <string name="salary_lpa">₹%1$s–%2$s LPA</string>
+    <string name="match_score">You have %d%% of the skills for this job</string>
+    <string name="skills_you_have">Skills you have</string>
+    <string name="skills_to_learn">Skills to learn</string>
+    <string name="about_role">About the role</string>
+    <string name="saved">Saved</string>
+
+    <!-- Bottom navigation -->
+    <string name="nav_jobs">Jobs</string>
+    <string name="nav_skills">Skills</string>
+    <string name="nav_profile">Profile</string>
+
+    <!-- Skills -->
+    <string name="my_skills">My Skills (%d)</string>
+    <string name="skills_intro">Your skills decide which jobs match you. Tap a skill to change its level.</string>
+    <string name="level_expert">Expert</string>
+    <string name="level_advanced">Advanced</string>
+    <string name="level_proficient">Proficient</string>
+    <string name="level_beginner">Beginner</string>
+    <string name="add_skill">Add skill</string>
+    <string name="remove">Remove</string>
+    <string name="search_skills">Search skills</string>
+    <string name="no_skills_in_level">None yet</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- Profile -->
+    <string name="location">Preferred location</string>
+    <string name="experience_level">Experience level</string>
+    <string name="exp_fresher">Fresher</string>
+    <string name="exp_junior">Junior</string>
+    <string name="exp_mid">Mid-level</string>
+    <string name="exp_senior">Senior</string>
+    <string name="language">App language</string>
+    <string name="lang_en" translatable="false">English</string>
+    <string name="lang_hi" translatable="false">हिन्दी</string>
+    <string name="job_alerts">Job alerts</string>
+    <string name="job_alerts_desc">Get notified about new jobs that match your skills</string>
+    <string name="job_alerts_channel_name">Job alerts</string>
+    <string name="job_alerts_channel_desc">Local alerts when job matching is enabled</string>
+    <string name="job_alerts_enabled_title">Job alerts on</string>
+    <string name="job_alerts_enabled_body">We\'ll notify you about jobs that match your skills.</string>
+    <string name="job_alerts_test_title">SkillMatch alert</string>
+    <string name="job_alerts_test_body">Test notification — job alerts are working on this device.</string>
+    <string name="send_test_notification">Send test notification</string>
+    <string name="save_changes">Save changes</string>
+    <string name="profile_saved">Profile saved</string>
+    <string name="logout">Log out</string>
+
+    <string name="error_network">Can\'t reach the server. Check your internet, or try again in a moment.</string>
+</resources>
