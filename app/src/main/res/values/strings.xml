@@ -102,9 +102,6 @@
     <string name="job_alerts_channel_desc">Local alerts when job matching is enabled</string>
     <string name="job_alerts_enabled_title">Job alerts on</string>
     <string name="job_alerts_enabled_body">We\'ll notify you about jobs that match your skills.</string>
-    <string name="job_alerts_test_title">SkillMatch alert</string>
-    <string name="job_alerts_test_body">Test notification — job alerts are working on this device.</string>
-    <string name="send_test_notification">Send test notification</string>
     <string name="save_changes">Save changes</string>
     <string name="profile_saved">Profile saved</string>
     <string name="logout">Log out</string>

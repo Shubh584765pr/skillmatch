@@ -99,9 +99,6 @@
     <string name="job_alerts_channel_desc">जब जॉब मैचिंग चालू हो तो स्थानीय सूचनाएँ</string>
     <string name="job_alerts_enabled_title">नौकरी अलर्ट चालू</string>
     <string name="job_alerts_enabled_body">आपके कौशल से मेल खाती नौकरियों की सूचना मिलेगी।</string>
-    <string name="job_alerts_test_title">SkillMatch अलर्ट</string>
-    <string name="job_alerts_test_body">टेस्ट सूचना — इस डिवाइस पर जॉब अलर्ट काम कर रहे हैं।</string>
-    <string name="send_test_notification">टेस्ट सूचना भेजें</string>
     <string name="save_changes">बदलाव सहेजें</string>
     <string name="profile_saved">प्रोफ़ाइल सहेजी गई</string>
     <string name="logout">लॉग आउट</string>

@@ -91,7 +91,7 @@ backend/
 
 ## Done / not done
 
-**Done:** login + sign up, job list with search and tabs (including Applied), job detail with Apply, save jobs, skills editor that drives matching, profile settings saved to the DB, full Hindi UI, local job-alert test notification.
+**Done:** login + sign up, job list with search and tabs (including Applied), job detail with Apply, save jobs, skills editor that drives matching, profile settings saved to the DB, full Hindi UI, local job-alert notification when alerts are enabled.
 
 **Not done / known gaps:**
 - Job alerts send a local device notification (not cloud/FCM push).

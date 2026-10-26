@@ -200,18 +200,6 @@ private fun ProfileForm(user: User, vm: AppViewModel) {
                 Text(stringResource(R.string.save_changes))
             }
         }
-        if (jobAlerts) {
-            Spacer(Modifier.height(8.dp))
-            OutlinedButton(
-                onClick = {
-                    ensureNotificationPermission()
-                    vm.sendTestJobAlert()
-                },
-                modifier = Modifier.fillMaxWidth().height(48.dp),
-            ) {
-                Text(stringResource(R.string.send_test_notification))
-            }
-        }
         Spacer(Modifier.height(8.dp))
         OutlinedButton(onClick = vm::logout, modifier = Modifier.fillMaxWidth().height(48.dp)) {
             Text(stringResource(R.string.logout))

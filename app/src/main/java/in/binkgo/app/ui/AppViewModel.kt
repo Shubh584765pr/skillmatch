@@ -122,13 +122,15 @@ class AppViewModel : ViewModel() {
             profileBusy = true
             profileError = null
             profileSaved = false
+            // Only toast when job alerts were just turned on — not on every save (e.g. language only).
+            val alertsWereOn = (session as? Session.LoggedIn)?.user?.jobAlerts == true
             apiCall { updateMe(update) }
                 .onSuccess {
                     session = Session.LoggedIn(it.user)
                     profileSaved = true
                     if (update.skills != null) skillsVersion++
                     applyLanguage(it.user.language)
-                    if (it.user.jobAlerts) {
+                    if (it.user.jobAlerts && !alertsWereOn) {
                         val app = SkillMatchApp.instance
                         JobAlertNotifications.show(
                             app,
@@ -140,16 +142,6 @@ class AppViewModel : ViewModel() {
                 .onFailure { profileError = it.message }
             profileBusy = false
         }
-    }
-
-    fun sendTestJobAlert() {
-        val app = SkillMatchApp.instance
-        JobAlertNotifications.show(
-            app,
-            app.getString(R.string.job_alerts_test_title),
-            app.getString(R.string.job_alerts_test_body),
-            notificationId = 1002,
-        )
     }
 
     fun loadSkillCatalog() {
